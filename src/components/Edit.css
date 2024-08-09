@@ -1,0 +1,50 @@
+/* Edit.css */
+
+.editor {
+    margin: 10px;
+
+  }
+  
+  .editor.light .jodit-wysiwyg {
+    background-color: #ffffff; /* Light theme background color */
+    color: #000000; /* Light theme text color */
+    min-height: 500px !important; 
+  }
+  
+  .editor.dark .jodit-wysiwyg {
+    background-color: #333333; /* Dark theme background color */
+    color: #ffffff; /* Dark theme text color */
+  }
+  .editor.light .jodit-toolbar {
+  background-color: #f0f0f0; /* Light theme toolbar background */
+  color: #000000; /* Light theme toolbar text color */
+}
+
+.editor.dark .jodit-toolbar {
+  background-color: #444444; /* Dark theme toolbar background */
+  color: #ffffff; /* Dark theme toolbar text color */
+}
+  /* Customize font size, family, etc. */
+  .jodit-wysiwyg {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+/* Toolbar button colors */
+.editor.light .jodit-toolbar button {
+    color: #000000; /* Light theme button text color */
+  }
+  
+  .editor.dark .jodit-toolbar button {
+    color: #ffffff; /* Dark theme button text color */
+  }
+  
+  /* Additional toolbar button hover effects */
+  .editor.light .jodit-toolbar button:hover {
+    background-color: #e0e0e0; /* Light theme button hover background color */
+  }
+  
+  .editor.dark .jodit-toolbar button:hover {
+    background-color: #555555; /* Dark theme button hover background color */
+  }
+  

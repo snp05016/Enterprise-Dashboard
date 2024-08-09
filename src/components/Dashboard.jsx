@@ -39,7 +39,6 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                    <Link to='/hr'>HELLO</Link>  
             </div>
         </section>
     );

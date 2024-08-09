@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import JoditEditor from "jodit-pro-react";
+import './Edit.css'; // Import your custom CSS file
 
 const Edit = ({ setHtmlContent }) => {
   
@@ -21,7 +22,7 @@ const Edit = ({ setHtmlContent }) => {
   };
 
   const config = {
-    theme: 'light',
+    theme: theme, // Use the current theme
     readonly: false,
     uploader: {
       url: 'https://xdsoft.net/jodit/finder/?action=fileUpload'
@@ -31,9 +32,10 @@ const Edit = ({ setHtmlContent }) => {
         url: 'https://xdsoft.net/jodit/finder/'
       },
       height: 580,
-    }
+    },
+    // Add additional configuration as needed
   };
-
+  
   return (
     <div className={`editor ${theme}`}>
       {editors.map((editor, index) => (
@@ -47,7 +49,7 @@ const Edit = ({ setHtmlContent }) => {
           onChange={newContent => {}}
         />
       ))}
-      {/* <button onClick={addEditor} className="add-editor-button">+</button> */}
+      {/* <button onClick={addEditor} className="add-editor-button">+</button>  */}
     </div>
   );
 };
