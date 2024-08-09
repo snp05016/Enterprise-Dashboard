@@ -1,0 +1,139 @@
+.news {
+    padding: 20px;
+    position: fixed;
+    width: 26.5%;
+    height: 25%;
+    color: #555!important;
+    background-color: aliceblue;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures that the overflow content does not spill out */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+:root {
+    --news-width-open: 26.5%;
+    --news-width-closed: 36.5%; /* Adjust as needed */
+} 
+.country{
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: beige;
+    top: 20px !important;
+    right:20px
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px); /* Adjust according to padding and header height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+}
+.news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.news-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.news-content p {
+    margin: 5px 0;
+}
+
+.news-category {
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.news-category.tech {
+    background-color: #e3f2fd;
+    color: #0277bd;
+}
+
+.news-category.finance {
+    background-color: #fff3e0;
+    color: #ff6f00;
+}
+
+.news-category.health {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.news-category.environment {
+    background-color: #d1c4e9;
+    color: #6a1b9a;
+}
+
+.latest{
+    color: #012970;
+}
+
+
+.news {
+    width: 26.5%;
+    transition: width 0.3s ease;
+}
+
+#main, #footer {
+    margin-left: 300px; 
+}
+
+
+.toggle-sidebar .news {
+    width: 32%; 
+}
+
+.toggle-sidebar #main, .toggle-sidebar #footer {
+    margin-left: 0;
+}
+
+
+.sidebar {
+    left: 10PX;
+    transition: left 0.3s ease;
+}
+
+
+.toggle-sidebar .sidebar {
+    left: -310px; 
+}

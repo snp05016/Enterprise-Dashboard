@@ -1,0 +1,430 @@
+.h1n {
+    padding: 0px 0px 0px 15px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #012970;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Calendar Styles */
+.react-calendar {
+    width: 100%; /* Make calendar take full width of its container */
+    background-color: white;
+    border-radius: 10px;
+}
+.calender{
+    position: fixed;
+}
+.react-calendar__tile--now {
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(0, 110, 255);
+}
+
+.react-calendar__tile:hover {
+    border-radius: 10px;
+}
+
+.react-calendar__navigation {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.react-calendar__navigation button {
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+}
+.calender{
+    position: fixed !important;
+}
+
+/* Calendar Container */
+.calendar-container {
+    position: fixed;
+    right: 1%;
+    top: 11%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 26.5%;
+    max-height: 80vh;   
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    height:46.2vh;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 62vh; 
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+/* Event List Container */
+.event-list-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    
+}
+
+
+/* Event Form Styles */
+.event-form-container {
+    position: fixed;
+    bottom: 51.25%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: rgb(248, 241, 231);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.event-form-container.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+}
+
+.event-form {
+    margin-top: 20px;
+    position: relative;
+}
+
+.event-form h2 {
+    margin: 0;
+    color: #333;
+}
+
+.event-form p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.event-form input[type="time"],
+.event-form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.event-form input[type="time"]:focus,
+.event-form input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.create-btn {
+    background-color: #3e91d4;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.create-btn:hover {
+    transition: transform 0.3s;
+    background-color: #218838;
+}
+
+.update-btn {
+    background-color: white;
+    color: #ffc107;
+    margin-bottom: 13px;
+    font-size: x-large;
+}
+
+.update-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    color: #dc3545;
+    background-color: white;
+    margin-bottom: 13px;
+    font-size: x-large;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.add-event-btn {
+    position: relative;
+    padding: 5px 10px 10px 10px;
+    border: none;
+    left: 89%;
+    top: -8%;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    background-color: #3e91d4;
+}
+.add-event-btn:hover {
+    background-color: #218838;
+}
+
+.close-btn {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #007bff;
+}
+
+/* Update Event Form Styles */
+.update-event-form-container {
+    position: absolute;
+    bottom: 60%;
+    right: 70.8%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: rgb(248, 241, 231);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.update-event-form-container.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+}
+
+.update-event-form {
+    margin-top: 20px;
+    position: relative;
+}
+
+.update-event-form h2 {
+    margin: 0;
+    color: #333;
+}
+
+.update-event-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.update-event-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.new-up-btn {
+    padding: 5px 10px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    background-color: #3e91d4;
+}
+
+/* Event List Styles */
+.event-list-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.event-list {
+    margin-top: 0;
+}
+
+.event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* margin-top: 35px; */
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-date {
+    color: #333;
+}
+
+.event-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.event-title {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.selected {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-radius: 20%;
+}
+
+.event-marked {
+    background-color: #ffc107;
+    border-radius: 50%;
+}
+
+.event-marked:hover {
+    background-color: #e0a800;
+}
+
+.sidecont{
+    position: fixed;
+}
+
+/* Scrollbar Styles for WebKit Browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+}
+
+#main, #footer {
+    margin-left: 300px; 
+}
+
+
+.toggle-sidebar .calendar-container {
+    width: 32%; 
+}
+
+.toggle-sidebar #main, .toggle-sidebar #footer {
+    margin-left: 0;
+}
+
+
+.sidebar {
+    left: 10PX;
+    transition: left 0.3s ease;
+}
+
+
+.toggle-sidebar .sidebar {
+    left: -300px; 
+}
+
+/* Calendar Container */
+.calendar-container {
+    position: fixed;
+    right: -30%;
+    top: 11%;
+    width: 26.5%;
+    max-height: 80vh;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    height: 62vh;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow-y: auto;
+    transition: width 0.3s ease,right 0.3s ease;
+}
+
+.calendar-container.show {
+    right: 1%;
+}
+
+.calendar-container.hide {
+    right: -35%;
+}
+
+/* Toggle Button */
+.toggle-calendar-btn {
+    position: fixed;
+    bottom: 18.5%;
+    left: 1.1%;
+    z-index: 999;
+    width:60px;
+    height: 60px;
+    background: linear-gradient(to bottom, #2841b1, #424783);
+    color: white;
+    font-size: x-large;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.calbtn{
+    margin-left: 8px;
+    margin-bottom: 7px;
+    z-index: 999;
+    color:white;
+}
+
+
+.toggle-calendar-btn:hover {
+    background-color: #218838;
+}

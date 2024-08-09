@@ -1,0 +1,99 @@
+.dashboard .info h6{
+    color: #012970;
+    position: relative;
+    padding: 0;
+    font-size:28px;
+    font-weight:700;
+    /* margin: 0; */
+    margin-left: 80px;
+    bottom: 60px;
+    margin-bottom: -40px;
+}
+.iconic{
+    direction: flex;
+    flex:1;
+    position: relative;
+    left:5%;
+    top:10%;
+    /* font-size:40px; */
+    /* background: #8c8c9c; */
+    color: #012970;
+    font-size:48px;
+    line-height:0;
+    width:64px;
+    border-radius: 20%;
+    height: 64px;
+    flex-shrink:0;
+    flex-grow:0;
+
+}
+.dashboard .card-icon{
+    font-size:32px;
+    line-height:0;
+    width:64px;
+    height: 64px;
+    flex-shrink:0;
+    flex-grow:0;
+    direction: flex;
+}
+.dashboard .hr-card .card-icon {
+    color: #4154f1; /* Adjust if needed */
+    background: #f6f6fc; /* Adjust if needed */
+    direction: flex;
+}
+
+.dashboard .cardbody {
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 5px 15px 35px 25px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .info {
+    position: relative; /* This makes the container a positioning context */
+}
+
+.deadline {
+    position: absolute; /* Positions the element relative to the nearest positioned ancestor */
+    left: 35%; /* Adjust based on your design */
+    bottom: 8%; /* Adjust based on your design */
+    color: #1b8142;
+    font-weight: 700;
+}
+    
+.leave-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leave-details-list li {
+    border-bottom: 1px solid #ddd; /* Full-width line */
+    padding: 8px 0; /* Space around items */
+    width: 100%; /* Ensure the line spans full width */
+}
+
+.leave-details-list .leave-name {
+    font-size: 18px; /* Big letters */
+    font-weight: bold;
+    display: block; /* Ensures each item is on its own line */
+}
+
+.leave-details-list .leave-date,
+.leave-details-list .leave-reason {
+    font-size: 14px; /* Medium letters */
+    color: #666; /* Gray color for medium text */
+    display: block; /* Ensures each item is on its own line */
+}
+
+.leave-details-list .leave-date {
+    margin-top: 4px; /* Space above the date */
+}
+
+.leave-details-list .leave-reason {
+    margin-top: 4px; /* Space above the reason */
+}
+
+.leave-details-list li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
