@@ -47,7 +47,7 @@ const Edit = ({ setHtmlContent }) => {
           onChange={newContent => {}}
         />
       ))}
-      <button onClick={addEditor} className="add-editor-button">+</button>
+      {/* <button onClick={addEditor} className="add-editor-button">+</button> */}
     </div>
   );
 };

@@ -24,7 +24,7 @@ function News() {
         <div className="news">
             <h2 className='latest'>Latest News</h2>
 
-            <select className='country 'value={country} onChange={(e) => setCountry(e.target.value)}>
+            <select className='country'value={country} onChange={(e) => setCountry(e.target.value)}>
                 <option value="us">United States</option>
                 <option value="gb">United Kingdom</option>
                 <option value="ae">United Arab Emirates</option>

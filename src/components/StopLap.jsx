@@ -52,12 +52,12 @@ function Stopwatch({ setEditorEnabled, isTimerLocked }) {
 
     return (
       <span>
-        {hours > 0 && <span>{String(hours).padStart(2, '0')}:&nbsp;</span>}
+        {hours >= 0 && <span>{String(hours).padStart(2, '0')}:</span>}
         <span>{String(minutes).padStart(2, '0')}</span>
         <span className="semi">:</span>
         <span>{String(seconds).padStart(2, '0')}</span>
-        <span className="semi">:</span>
-        <span>{String(milliseconds).padStart(3, '0')}</span>
+        {/* <span className="semi">:</span>  */}
+        {/* <span>{String(milliseconds).padStart(3, '0')}</span> */}
       </span>
     );
   }
