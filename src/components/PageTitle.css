@@ -1,9 +1,14 @@
 .pagetitle {
     margin-bottom: 10px;
 }
-.pagetitle h1{
+.pagetitle h1 {
     font-size: 24px;
     margin-bottom: 0;
     font-weight: 600;
+}
+.h1page.light {
     color: #012970;
+}
+.h1page.dark {
+    color: #b0b6da;
 }

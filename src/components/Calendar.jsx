@@ -95,7 +95,7 @@ const Cal = () => {
                 <i className='bi bi-calendar calbtn'/>
             </button></div>
 
-            <div className={`calendar-container ${showCalendar ? 'show' : 'hide'}`}>
+            <div className={`calendar-container ${showCalendar ? 'hide' : 'show'}`}>
                 <h1 className="h1n">Calendar</h1>
                 
                 <button className="add-event-btn" onClick={handleAddEventButtonClick}>

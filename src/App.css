@@ -22,12 +22,12 @@ body {
 }
 
 body.dark-mode {
-  background-color: #302f2f;
+  background-color: #464545;
   color: #ffffff;
 }
 
 body.light-mode {
-  background-color: #dfe4e7;
+  background-color: #cdd3d6;
   color: #444444;
 }
 

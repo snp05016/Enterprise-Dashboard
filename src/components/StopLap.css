@@ -16,6 +16,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: rgb(238, 238, 215);
+    color: black;
   }
   
   .start-btn, .stop-btn, .reset-btn, .lap-btn {

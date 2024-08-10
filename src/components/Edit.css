@@ -8,20 +8,20 @@
   .editor.light .jodit-wysiwyg {
     background-color: #ffffff; /* Light theme background color */
     color: #000000; /* Light theme text color */
-    min-height: 500px !important; 
+    min-height: 620px !important; 
   }
   
   .editor.dark .jodit-wysiwyg {
-    background-color: #333333; /* Dark theme background color */
+    background-color: #ffffff; /* Dark theme background color */
     color: #ffffff; /* Dark theme text color */
   }
   .editor.light .jodit-toolbar {
-  background-color: #f0f0f0; /* Light theme toolbar background */
+  background-color: #ffffff; /* Light theme toolbar background */
   color: #000000; /* Light theme toolbar text color */
 }
 
 .editor.dark .jodit-toolbar {
-  background-color: #444444; /* Dark theme toolbar background */
+  background-color: #ffffff; /* Dark theme toolbar background */
   color: #ffffff; /* Dark theme toolbar text color */
 }
   /* Customize font size, family, etc. */
