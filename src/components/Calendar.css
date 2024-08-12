@@ -153,21 +153,26 @@
     color: #ffc107;
     margin-bottom: 13px;
     font-size: x-large;
+    border: none;
 }
 
 .update-btn:hover {
-    background-color: #e0a800;
+    color: #000000;
 }
 
 .delete-btn {
-    color: #dc3545;
+    /* color: #dc3545; */
     background-color: white;
+    color: #c82333;
     margin-bottom: 13px;
+    height: 10px;
     font-size: x-large;
+    border: none;
 }
 
 .delete-btn:hover {
-    background-color: #c82333;
+    /* background-color: #c82333; */
+    color: #000000;
 }
 
 .add-event-btn {
