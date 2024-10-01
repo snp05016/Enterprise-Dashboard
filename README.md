@@ -44,3 +44,31 @@ This Enterprise Dashboard is designed to cater to the needs of various departmen
 ## 🚀 Setup and Installation
 
 1. Clone the repository:
+git clone https://github.com/snp05016/Enterprise-Dashboard
+
+
+## 📊 Screenshots
+
+
+(![image](https://github.com/user-attachments/assets/cdfb0966-2124-4455-b50d-a9cc3a860efa)
+
+
+## 🏗️ Future Improvements
+
+- Adding additional department-specific functionalities.
+- Integration with more third-party tools for extended functionality.
+- Enhancing the real-time notification system.
+
+## 👨‍💻 Contributing
+
+Contributions are welcome! Feel free to open a pull request or an issue if you have suggestions.
+
+## 💼 Credits
+
+- **Developer:** Saumya Patel  
+- **Mentor:** Danish Godhran  
+- **Special Thanks:** Sadiq Mohammed for internship support
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
